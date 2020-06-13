@@ -1,0 +1,27 @@
+$titles: 'Muli', sans-serif;
+$text: 'Raleway', sans-serif;
+$main-color: blue;
+$primary-color: #000000;
+$secondary-color: #6a6a6a;
+$color-links: #c00;
+$color-optional: #fff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $titles;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "hero hero"
+                         "about about"
+                         "cv cv"
+                         "contact contact"
+                         "footer footer",
+}
+

@@ -1,0 +1,32 @@
+
+ header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color: $primary-color;
+     padding: 10px 30px;
+ }
+header .logo {
+    text-decoration: none;
+    color: $primary-color;
+    font-size: 30px;
+}
+header .logo:hover {
+    color: $color-links;
+}
+.nav__items {
+    list-style: none;
+}
+.nav__items li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav__items li a {
+    text-decoration: none;
+    color: $secondary-color;
+}
+.nav__items li a:hover {
+    color: $primary-color;
+   border-bottom: 2px solid $color-links;
+}
+ 
