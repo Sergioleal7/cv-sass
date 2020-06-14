@@ -27,3 +27,16 @@ main {
 
 }
 
+@media (max-width: 767px) {
+    main {
+        grid-template-areas: 
+        'hero'
+        'about'
+        'brief'
+        'education'
+        'experiencia'
+        'contact';
+    }
+  
+}
+

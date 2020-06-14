@@ -16,6 +16,10 @@ main {
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: "hero hero"  "about brief" "education experiencia" "contact contact"; }
 
+@media (max-width: 767px) {
+  main {
+    grid-template-areas: 'hero' 'about' 'brief' 'education' 'experiencia' 'contact'; } }
+
 .hero {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -56,6 +60,12 @@ main {
 .hero__container--button a:hover {
   color: #c00; }
 
+@media (max-width: 767px) {
+  .hero__container h1 {
+    color: #fff;
+    font-size: 40px;
+    padding-top: 50%; } }
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,6 +101,12 @@ header .logo:hover {
 .nav__items li a:hover {
   color: #000000;
   border-bottom: 2px solid #c00; }
+
+@media (max-width: 767px) {
+  header .logo {
+    font-size: 18px; }
+  .nav__items li a {
+    font-size: 12px; } }
 
 .about {
   -ms-grid-row: 2;
@@ -137,6 +153,24 @@ header .logo:hover {
   text-decoration-line: underline;
   -webkit-text-decoration-color: #c00;
   text-decoration-color: #c00; }
+
+@media (max-width: 767px) {
+  .about {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: about;
+    height: 50%; }
+  .about__image img {
+    padding-top: 5%; }
+  .brief {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: brief;
+    height: 50vh; }
+  .brief__description {
+    padding: 10px; }
+  .brief__description h2 {
+    font-size: 30px; } }
 
 .education {
   -ms-grid-row: 3;
@@ -217,6 +251,34 @@ header .logo:hover {
   position: relative;
   text-align: center; }
 
+@media (max-width: 767px) {
+  .hero {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1; }
+  .about {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; }
+  .brief {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1; }
+  .about {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; }
+  .brief {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1; }
+  .education {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1; }
+  .experience {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1; }
+  .contact {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1; } }
+
 .contact h2 {
   color: #fff;
   font-size: 50px;
@@ -232,3 +294,9 @@ header .logo:hover {
 
 .contact a:hover {
   color: #c00; }
+
+@media (max-width: 767px) {
+  .contact h2 {
+    color: #fff;
+    font-size: 40px;
+    padding-top: 50%; } }

@@ -27,4 +27,10 @@
     color: $color-links;
 }
 
-
+@media (max-width: 767px) {
+    .contact h2{
+        color: $color-optional;
+        font-size: 40px;
+        padding-top: 50%;
+    }
+}

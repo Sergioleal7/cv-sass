@@ -29,4 +29,13 @@ header .logo:hover {
     color: $primary-color;
    border-bottom: 2px solid $color-links;
 }
+
+@media (max-width: 767px) {
+    header .logo {
+        font-size: 18px;
+    }
+    .nav__items li a {
+       font-size: 12px;
+    }
+}
  

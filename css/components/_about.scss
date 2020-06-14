@@ -36,3 +36,23 @@
     text-decoration-line: underline;
     text-decoration-color: $color-links;
 }
+
+@media (max-width: 767px) {
+    .about {
+        grid-area: about;
+        height: 50%;
+    }
+    .about__image img {
+        padding-top: 5%;
+    }
+    .brief{
+        grid-area: brief;
+        height: 50vh;
+    }
+    .brief__description {
+        padding: 10px;
+    }
+    .brief__description h2{
+        font-size: 30px;
+    }
+}
