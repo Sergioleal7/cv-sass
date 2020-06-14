@@ -18,10 +18,12 @@ body {
 
 main {
     display: grid;
-    grid-template-areas: "hero hero"
-                         "about about"
-                         "cv cv"
-                         "contact contact"
-                         "footer footer",
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "hero hero" 
+                         "about brief"
+                         "education experiencia"
+                         "contact contact";
+
 }
 

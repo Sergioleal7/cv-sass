@@ -10,14 +10,16 @@ body {
 main {
   display: -ms-grid;
   display: grid;
-  grid-template-areas: "hero hero" "about about" "cv cv" "contact contact" "footer footer"; }
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[4];
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "hero hero"  "about brief" "education experiencia" "contact contact"; }
 
 .hero {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  display: -ms-grid;
-  display: grid;
   grid-area: hero;
   width: 100%;
   height: 100vh;
@@ -93,7 +95,140 @@ header .logo:hover {
 .about {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
+  grid-area: about;
+  height: 100vh;
+  text-align: center; }
+
+.about__image img {
+  padding-top: 20%;
+  width: 500px; }
+
+.brief {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: brief;
+  height: 100vh;
+  text-align: center; }
+
+.brief__description {
+  padding-top: 20%; }
+
+.brief__description h2 {
+  font-size: 50px;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-color: #c00;
+  text-decoration-color: #c00; }
+
+.brief__description p {
+  padding-top: 5%;
+  text-align: justify; }
+
+.brief__description ul {
+  list-style: none;
+  padding: 5%;
+  text-align: justify; }
+
+.brief__description li {
+  padding-top: 2px; }
+
+.brief__description span {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-color: #c00;
+  text-decoration-color: #c00; }
+
+.education {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: education;
+  height: 100vh;
+  text-align: center; }
+
+.education__title {
+  font-size: 50px;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-color: #c00;
+  text-decoration-color: #c00; }
+
+.education__description {
+  padding-top: 5%; }
+
+.education__description--info {
+  padding-top: 10px; }
+
+.education__description--info h3 {
+  padding-top: 10px;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-color: #c00;
+  text-decoration-color: #c00; }
+
+.education__description--info p {
+  text-align: justify;
+  padding: 5px 20px; }
+
+.experience {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: experiencia;
+  height: 100vh;
+  text-align: center; }
+
+.experience__title {
+  font-size: 50px;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-color: #c00;
+  text-decoration-color: #c00; }
+
+.experience__description {
+  padding-top: 5%; }
+
+.experience__description--info {
+  padding-top: 10px; }
+
+.experience__description--info h3 {
+  padding-top: 10px;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-color: #c00;
+  text-decoration-color: #c00; }
+
+.experience__description--info p {
+  padding: 5px 20px; }
+
+.contact {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  display: -ms-grid;
-  display: grid;
-  grid-area: about; }
+  grid-area: contact;
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/assets/images/contact.jpg");
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/contact.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/contact.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/contact.jpg");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center; }
+
+.contact h2 {
+  color: #fff;
+  font-size: 50px;
+  padding-top: 15%; }
+
+.contact p {
+  color: #fff;
+  font-size: 20px; }
+
+.contact a {
+  color: #fff;
+  font-size: 18px; }
+
+.contact a:hover {
+  color: #c00; }

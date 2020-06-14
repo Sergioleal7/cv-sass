@@ -1,0 +1,49 @@
+.education {
+    grid-area: education;
+    height: 100vh;
+    text-align: center;
+}
+.education__title{
+    font-size: 50px;
+    text-decoration-line: underline;
+    text-decoration-color: $color-links;
+}
+.education__description {
+    padding-top: 5%;
+}
+.education__description--info {
+    padding-top: 10px;
+}
+.education__description--info h3 {
+    padding-top: 10px;
+    text-decoration-line: underline;
+    text-decoration-color: $color-links;
+}
+.education__description--info p {
+    text-align: justify;
+    padding: 5px 20px;
+}
+.experience {
+    grid-area: experiencia;
+    height: 100vh;
+    text-align: center;
+}
+.experience__title{
+    font-size: 50px;
+    text-decoration-line: underline;
+    text-decoration-color: $color-links;
+}
+.experience__description {
+    padding-top: 5%;
+}
+.experience__description--info {
+    padding-top: 10px;
+}
+.experience__description--info h3 {
+    padding-top: 10px;
+    text-decoration-line: underline;
+    text-decoration-color: $color-links;
+}
+.experience__description--info p {
+    padding: 5px 20px;
+}
